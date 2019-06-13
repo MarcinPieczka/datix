@@ -9,7 +9,7 @@ Launching datix will start with executing coordinator process
 which will than run elements of the DB specified in configuration
 
 ### Exemplary launch config
-`
+```
 services:
     - endpoint:
         name: GRPC_endpoint
@@ -57,7 +57,7 @@ connections:
         - indexes
         - cache
         - logger
-`
+```
 
 ## Goals
 reason to start this project is to create database that
