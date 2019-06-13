@@ -60,7 +60,7 @@ connections:
 ```
 
 ## Goals
-reason to start this project is to create database that
+Reason to start this project is to create database that
 will be extremely configurable, high performance modular database
 that will be fit to use cases that make you think that writing
 your DB would be best solution. With datix you'll be able to choose
@@ -73,3 +73,18 @@ highly distributed one.
 
 Another important point is to have query chaining, with output of
 one being able to be input of another
+
+## Interface specification ideas
+Each component can have multiple interfaces and the interfaces
+should be shared as much as possible between components.
+
+For instance logging interface would be example of shared interface.
+Component like endpoint, executor or logging components could have
+line in config like `implements logging` so that when connecting
+those components in launcher configuration, the connection will
+happen automatically.
+
+In this example writing your own "S3_logger" or "Papertrail_logger"
+would be easy task, and using would be seamless.
+
+Other common interfaces would include caching, queuing and others
