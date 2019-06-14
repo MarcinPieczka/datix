@@ -3,7 +3,8 @@ UNIX structured database written in rust
 
 ## Idea
 Datix will be structured in unix style, meaning that each component
-will be separate process, connected to another by unix socket
+will be separate process, connected to another by common, well specified interfaces.
+Each component working in asynchronous streaming fashion.
 
 Launching datix will start with executing coordinator process
 which will than run elements of the DB specified in configuration
