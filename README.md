@@ -87,4 +87,12 @@ happen automatically.
 In this example writing your own "S3_logger" or "Papertrail_logger"
 would be easy task, and using would be seamless.
 
-Other common interfaces would include caching, queuing and others
+Other common interfaces would include caching, queuing, monitoring
+
+## Unstructured ideas list
+- Make hot module swap possible? Built in into launcher, and would
+  make bumping version of certain components easier, possibly with
+  automatic rollback
+- Autoscaling of components in launcher
+- Check out SCTP for main transport protocol,
+  it looks like a great thing
